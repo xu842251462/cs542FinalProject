@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Income composition of resources <= 0.6\nmse = 71.6\nsamples = 814\nvalue = 70.1"] ;
+1 [label="Polio <= 1.2\nmse = 41.9\nsamples = 232\nvalue = 60.1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Country <= 240.0\nmse = 18.3\nsamples = 117\nvalue = 64.1"] ;
+1 -> 2 ;
+3 [label="mse = 11.6\nsamples = 76\nvalue = 66.1"] ;
+2 -> 3 ;
+4 [label="mse = 9.7\nsamples = 41\nvalue = 60.4"] ;
+2 -> 4 ;
+5 [label="Country <= 416.5\nmse = 31.3\nsamples = 115\nvalue = 55.8"] ;
+1 -> 5 ;
+6 [label="mse = 23.9\nsamples = 89\nvalue = 57.5"] ;
+5 -> 6 ;
+7 [label="mse = 11.5\nsamples = 26\nvalue = 49.9"] ;
+5 -> 7 ;
+8 [label="Income composition of resources <= 0.8\nmse = 27.4\nsamples = 582\nvalue = 74.1"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Country <= 180.0\nmse = 15.8\nsamples = 458\nvalue = 72.2"] ;
+8 -> 9 ;
+10 [label="mse = 7.3\nsamples = 342\nvalue = 73.7"] ;
+9 -> 10 ;
+11 [label="mse = 15.3\nsamples = 116\nvalue = 67.9"] ;
+9 -> 11 ;
+12 [label="GDP <= 1.8\nmse = 11.6\nsamples = 124\nvalue = 80.9"] ;
+8 -> 12 ;
+13 [label="mse = 7.6\nsamples = 107\nvalue = 81.6"] ;
+12 -> 13 ;
+14 [label="mse = 3.7\nsamples = 17\nvalue = 74.9"] ;
+12 -> 14 ;
+}
